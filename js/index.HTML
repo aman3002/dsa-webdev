@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <STYLE>
+            BODY{
+                BACKGROUND-COLOR:BLACK;
+            }
+            P,button{
+                COLOR:RED;
+                justify-content: center;
+                display:flex;
+                text-align: center;
+                align-self: center;
+                        }
+            button{
+                position: center;
+            }
+        </STYLE>
+
+    </HEAD>
+    <BODY>
+       
+        <P id="a1">HELLO EVERYONE</P>
+        <script>
+            function hello(){
+                if(document.getElementById("a1").innerHTML=="HELLO EVERYONE"){    
+            document.getElementById("a1").innerHTML="bye bye";
+            }
+        else{
+            document.getElementById("a1").innerHTML="HELLO EVERYONE";
+        }
+        }
+            </script>
+        <button onclick="hello()">click me</button>
+    
+    </BODY>
+</HTML>
